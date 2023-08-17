@@ -10,7 +10,7 @@ function Product({ name, addCart }) {
     <div>
         <h4> {name} </h4>
         <button onClick={addMore}>+</button>
-        <input onInput={e => changeNumber(e.target.value)} type='number' />
+        <input onInput={e => changeNumber(e.target.value)} type='number' value={productsNumber} />
         <button onClick={addLess}>-</button>
         <button onClick={() => addCart(productsNumber)}>Add to Cart</button>
     </div>

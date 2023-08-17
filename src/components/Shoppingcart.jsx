@@ -4,7 +4,7 @@ import Product from './Product';
 
 function Shoppingcart() {
     const [totalProducts, setTotalProducts] = useState(0);
-    const addToCart = n => setTotalProducts(totalProducts + n);
+    const addToCart = n => setTotalProducts(totalProducts + Number(n));
 
     return (
     <div>
